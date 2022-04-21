@@ -11,8 +11,12 @@ class UserService{
     static updateUsername(User,newName){
        return User.setUsername = newName
     }
-    static getAllUsernames(user1, user2, user3){
-        
+    static getAllUsernames(listOfUsers){
+        let usernames = []
+        listOfUsers.forEach(user => {
+            usernames.push(user.getUsername)
+        });
+        return usernames
     }
    
     
